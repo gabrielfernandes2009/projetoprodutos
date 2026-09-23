@@ -1,0 +1,10 @@
+CREATE TABLE games (
+	id SERIAL PRIMARY KEY,
+	titulo VARCHAR(150) NOT NULL,
+	plataforma VARCHAR(80) NOT NULL,
+	genero VARCHAR(80) NOT NULL,
+	desenvolvedora VARCHAR(150) NOT NULL,
+	ano_lancamento INTEGER NOT NULL,
+	preco NUMERIC(10, 2) NOT NULL,
+	estoque INTEGER NOT NULL DEFAULT 0
+);
